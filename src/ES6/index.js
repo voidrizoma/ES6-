@@ -110,3 +110,20 @@ class calculator {
 
 const calc = new calculator()
 console.log(calc.sum(3,4))
+
+//modules
+import {hello} from './module'
+hello()
+
+//generators
+function* helloWorld(){
+  if(true) {
+    yield 'Hello';
+  }if (true) {
+    yield 'World'
+  }
+}
+
+const generator = helloWorld()
+console.log(generator.next().value)
+console.log(generator.next().value)
