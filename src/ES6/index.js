@@ -31,3 +31,18 @@ many letters...`
 
 console.log(lorem)
 
+//Destructuring
+let person = {
+  'name': 'Karen',
+  'age': 32,
+  'country': 'MX'
+}
+
+//Before ES6
+
+console.log(person.name, person.age, person.country)
+
+//ES6
+
+let { name, age, country } = person
+console.log(name, age, country)
