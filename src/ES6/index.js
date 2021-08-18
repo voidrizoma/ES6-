@@ -79,3 +79,18 @@ const listNames = (name, age, country) => {
 const listNames2 = name => {
   //...
 }
+
+//Promises
+const helloPromise = () => {
+  return new Promise((resolve, reject) => {
+    if(true){
+      resolve('Hey')
+    } else {
+      reject ('ups!!')
+    }
+  })
+}
+
+helloPromise()
+  .then(response => console.log(response))
+  .catch(error => console.log(error))
