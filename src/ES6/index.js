@@ -46,3 +46,12 @@ console.log(person.name, person.age, person.country)
 
 let { name, age, country } = person
 console.log(name, age, country)
+
+//spread operator
+
+let team1 = ['karen', 'lorem', 'ipsum']
+let team2 = ['demo', 'test', 'chale']
+
+let joinTeams = ['Tito', ...team1, ...team2]
+
+console.log(joinTeams)
