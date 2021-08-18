@@ -20,3 +20,14 @@ let phrase = 'phrase'
 
 let newPhrase = `${hello} ${phrase}`
 console.log(newPhrase)
+
+// string multilineal
+
+let lorem = `Hello! I want to be a multilineal string
+blah blah
+blah blah
+......
+many letters...`
+
+console.log(lorem)
+
