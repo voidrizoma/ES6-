@@ -39,19 +39,43 @@ let person = {
 }
 
 //Before ES6
-
 console.log(person.name, person.age, person.country)
 
 //ES6
-
 let { name, age, country } = person
 console.log(name, age, country)
 
 //spread operator
-
 let team1 = ['karen', 'lorem', 'ipsum']
 let team2 = ['demo', 'test', 'chale']
-
 let joinTeams = ['Tito', ...team1, ...team2]
 
 console.log(joinTeams)
+
+//create objects
+let name = 'Karen'
+let age = 32
+
+//before ES6
+obj = {name: name, age: age}
+
+//ES6
+obj2 = {name, age}
+console.log(obj2)
+
+//arrow functions: better syntaxt and a .this not linked
+const names = [
+  {name: 'Karen', age: 32},
+  {name: 'Simon', age: 9},
+  {name: 'Tito', age:5}
+]
+
+let listNames = names.map((item => console.log(item.name)))
+
+const listNames = (name, age, country) => {
+//  ...
+}
+
+const listNames2 = name => {
+  //...
+}
